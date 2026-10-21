@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us | Kilton Technologies</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a href="/" class="brand" aria-label="Kilton Technologies home">
+				<img src="/assets/logo.png" width="40"/>
+				<span class="brand-name">KILTON<span> TECHNOLOGIES</span></span>
+			</a>
+
+			<button
+				class="menu-toggle"
+				aria-label="Open navigation"
+				aria-expanded="false"
+				aria-controls="navigation"
+			>
+				<span></span><span></span>
+			</button>
+
+			<nav class="nav" id="navigation">
+				<a href="/">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="services.html">Services</a>
+				<a href="contact.html" class="nav-active">Contact</a>
+			</nav>
+
+			<a href="contact.html" class="header-cta">LET'S TALK <span>↗</span></a>
+		</header>
+
+		<main>
+			<section class="contact-main" id="contact-form">
+				<div class="form-panel">
+					<div class="form-heading">
+						<span class="eyebrow light-eyebrow"
+							>- TELL US ABOUT IT</span
+						>
+						<h2>What can we help you <span>solve?</span></h2>
+						<p>
+							Fill in a few details and our team can take it from
+							there.
+						</p>
+					</div>
+
+					<form id="inquiryForm">
+						<div class="form-row">
+							<div class="field">
+								<label for="name">Your name *</label>
+								<input
+									id="name"
+									name="name"
+									type="text"
+									placeholder="e.g. Alex Johnson"
+									required
+								/>
+							</div>
+							<div class="field">
+								<label for="company">Company name</label>
+								<input
+									id="company"
+									name="company"
+									type="text"
+									placeholder="Your organisation"
+								/>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="field">
+								<label for="email">Work email *</label>
+								<input
+									id="email"
+									name="email"
+									type="email"
+									placeholder="you@company.com"
+									required
+								/>
+							</div>
+							<div class="field">
+								<label for="phone">Phone number</label>
+								<input
+									id="phone"
+									name="phone"
+									type="tel"
+									placeholder="+966"
+								/>
+							</div>
+						</div>
+
+						<div class="field">
+							<label for="service"
+								>What are you looking for?</label
+							>
+							<select id="service" name="service">
+								<option value="" disabled selected>
+									Select a service
+								</option>
+								<option>Networking & Connectivity</option>
+								<option>Wireless Solutions</option>
+								<option>Security & Surveillance</option>
+								<option>Access Control</option>
+								<option>IT Infrastructure</option>
+								<option>
+									Audio Visual & Unified Communications
+								</option>
+								<option>Fire Alarm Systems</option>
+								<option>Enterprise Products</option>
+								<option>Software Solutions</option>
+								<option>Multiple Services / Other</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<label for="message"
+								>Tell us a little about your project *</label
+							>
+							<textarea
+								id="message"
+								name="message"
+								rows="5"
+								placeholder="Your requirements, challenges, timeline..."
+								required
+							></textarea>
+						</div>
+
+						<button
+							class="button button-blue"
+							type="submit"
+						>
+							Send your inquiry <span>↗</span>
+						</button>
+                        
+						<p class="form-footnote">
+							By submitting this form, you agree to be contacted
+							about your inquiry.
+						</p>
+					</form>
+				</div>
+
+				<aside class="contact-sidebar">
+					<div class="sidebar-top">
+						<span class="eyebrow">- DIRECT CONTACT</span>
+						<h3>Prefer a direct line?</h3>
+						<p>
+							Reach out through whichever channel works best for
+							you.
+						</p>
+					</div>
+
+					<a
+						class="contact-method"
+						href="mailto:sales@kiltontech.com"
+					>
+						<span class="method-icon">↗</span>
+						<span class="method-copy">
+							<small>EMAIL OUR TEAM</small>
+							<strong>sales@kiltontech.com</strong>
+						</span>
+						<span class="method-arrow">↗</span>
+					</a>
+
+					<a class="contact-method" href="tel:+966556581721">
+						<span class="method-icon">↗</span>
+						<span class="method-copy">
+							<small>GIVE US A CALL</small>
+							<strong>+966 55 658 1721</strong>
+						</span>
+						<span class="method-arrow">↗</span>
+					</a>
+
+					<a
+						class="contact-method"
+						href="https://wa.me/966556581721"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<span class="method-icon whatsapp-icon">W</span>
+						<span class="method-copy">
+							<small>CHAT ON WHATSAPP</small>
+							<strong>Message our team</strong>
+						</span>
+						<span class="method-arrow">↗</span>
+					</a>
+
+					<div class="sidebar-bottom">
+						<div class="availability-dot"></div>
+						<div>
+							<strong>Let's get things moving.</strong>
+							<p>
+								Share your requirements and start the
+								conversation.
+							</p>
+						</div>
+					</div>
+				</aside>
+			</section>
+
+			<section class="contact-cta" id="contact">
+				<div class="cta-glow"></div>
+				<span class="eyebrow light-eyebrow"
+					>LET'S BUILD SOMETHING RELIABLE</span
+				>
+				<h2>
+					Your next project<br />starts with
+					<span>a conversation.</span>
+				</h2>
+				<p>
+					Planning new infrastructure, upgrading existing systems or
+					sourcing enterprise technology? Let's discuss your
+					requirements.
+				</p>
+				<div class="hero-actions">
+					<a
+						href="mailto:sales@kiltontech.com"
+						class="button button-light"
+						>Request a quotation <span>↗</span></a
+					>
+					<a
+						href="https://wa.me/966556581721"
+						class="button button-outline"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Talk to our team ↗</a
+					>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="footer-brand">
+					<a href="#home" class="brand footer-logo">
+						<img src="/assets/logo.png" width="60" />
+
+						<span class="brand-name"
+							>KILTON<span> TECHNOLOGIES</span></span
+						>
+					</a>
+					<p class="footer-tagline">
+						Engineering Technology.<br />Enabling Business.
+					</p>
+					<p class="footer-description">
+						Integrated ICT infrastructure, networking, security, AV,
+						enterprise products and software solutions across Saudi
+						Arabia.
+					</p>
+				</div>
+
+				<div class="footer-column">
+					<h4>QUICK LINKS</h4>
+					<a href="about.html">About Us</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html" class="nav-active">Contact</a>
+				</div>
+
+				<div class="footer-column">
+					<h4>OUR SOLUTIONS</h4>
+					<a href="/#capabilities">ICT & Networking</a>
+					<a href="/#capabilities">Security & Access</a>
+					<a href="/#capabilities">IT Infrastructure</a>
+					<a href="/#capabilities">AV & Communications</a>
+					<a href="/#capabilities">Fire Alarm Systems</a>
+					<a href="/#capabilities">Software & Cybersecurity</a>
+				</div>
+
+				<div class="footer-column footer-contact">
+					<h4>GET IN TOUCH</h4>
+					<span>Kingdom of Saudi Arabia</span>
+					<a href="tel:+966556581721">+966 556581721</a>
+					<a href="mailto:sales@kiltontech.com"
+						>sales@kiltontech.com</a
+					>
+					<a
+						href="https://wa.me/966556581721"
+						target="_blank"
+						rel="noopener noreferrer"
+						>WhatsApp ↗</a
+					>
+					<p>
+						Baseel Tower, 7984 Firas Ibn Al Nudur St, Olaya, Al
+						Khobar 34447
+					</p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<span>© 2026 Kilton Technologies. All Rights Reserved.</span>
+				<span>ENGINEERING TECHNOLOGY. ENABLING BUSINESS.</span>
+			</div>
+		</footer>
+
+		<script>
+			const menuToggle = document.querySelector(".menu-toggle");
+			const navigation = document.querySelector(".nav");
+
+			menuToggle.addEventListener("click", () => {
+				const isOpen =
+					menuToggle.getAttribute("aria-expanded") === "true";
+				menuToggle.setAttribute("aria-expanded", String(!isOpen));
+				navigation.classList.toggle("nav-open", !isOpen);
+			});
+
+			navigation.querySelectorAll("a").forEach((link) => {
+				link.addEventListener("click", () => {
+					navigation.classList.remove("nav-open");
+					menuToggle.setAttribute("aria-expanded", "false");
+				});
+			});
+		</script>
+	</body>
+</html>
