@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Kilton Technologies delivers integrated ICT infrastructure, networking, security, AV, enterprise products and software solutions across Saudi Arabia."
+		/>
 		<title>Contact Us | Kilton Technologies</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +36,8 @@
 				<a href="/">Home</a>
 				<a href="about.html">About Us</a>
 				<a href="services.html">Services</a>
-				<a href="contact.html" class="nav-active">Contact</a>
+				<a href="newsroom.html">Newsroom</a>
+				<a href="contact.html">Contact</a>
 			</nav>
 
 			<a href="contact.html" class="header-cta"
@@ -60,13 +65,13 @@
 						</p>
 					</div>
 
-					<form id="inquiryForm">
+					<form id="contact-form">
 						<div class="form-row">
 							<div class="field">
 								<label for="name">Your name *</label>
 								<input
 									id="name"
-									name="name"
+									name="fi-sender-fullName"
 									type="text"
 									placeholder="e.g. Alex Johnson"
 									required
@@ -76,7 +81,7 @@
 								<label for="company">Company name</label>
 								<input
 									id="company"
-									name="company"
+									name="fi-sender-company"
 									type="text"
 									placeholder="Your organisation"
 								/>
@@ -88,19 +93,20 @@
 								<label for="email">Business Email *</label>
 								<input
 									id="email"
-									name="email"
+									name="fi-sender-email"
 									type="email"
 									placeholder="you@company.com"
 									required
 								/>
 							</div>
 							<div class="field">
-								<label for="phone">Contact Number</label>
+								<label for="phone">Contact Number *</label>
 								<input
 									id="phone"
-									name="phone"
+									name="fi-sender-phone"
 									type="tel"
 									placeholder="+966"
+									required
 								/>
 							</div>
 						</div>
@@ -109,7 +115,7 @@
 							<label for="location">Project Location *</label>
 							<input
 								id="location"
-								name="location"
+								name="fi-sender-address"
 								type="text"
 								placeholder="Olaya, Al Khobar"
 								required
@@ -120,7 +126,7 @@
 							<label for="service"
 								>What are you looking for?</label
 							>
-							<select id="service" name="service">
+							<select id="service" name="fi-select-service">
 								<option value="" disabled selected>
 									Select a service
 								</option>
@@ -145,7 +151,7 @@
 							>
 							<textarea
 								id="message"
-								name="message"
+								name="fi-text-message"
 								rows="5"
 								placeholder="Your requirements, challenges, timeline..."
 								required
@@ -157,17 +163,28 @@
 								>Upload RFQ / BOQ / Technical
 								Specification</label
 							>
-							<input id="upload" name="upload" type="file" />
+							<input
+								id="upload"
+								name="fi-file-attachment"
+								type="file"
+							/>
 						</div>
-
-						<button class="button button-blue" type="submit">
-							Send your inquiry <span>↗</span>
-						</button>
-
-						<p class="form-footnote">
-							By submitting this form, you agree to be contacted
-							about your inquiry.
-						</p>
+						<div class="cta-container">
+							<button class="button button-blue" type="submit">
+								Request a Quotation <span>↗</span>
+							</button>
+							<p>
+								Prefer to speak with us?
+								<a
+									class=""
+									href="https://wa.me/966556581721"
+									target="_blank"
+									rel="noopener noreferrer"
+									>Talk to Our Team <span>↗</span></a
+								>
+							</p>
+						</div>
+						<p id="form-status"></p>
 					</form>
 				</div>
 
@@ -213,12 +230,7 @@
 						</span>
 					</a>
 
-					<div
-						class="contact-method"
-						href="https://wa.me/966556581721"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+					<div class="contact-method">
 						<span class="method-icon">↗</span>
 						<span class="method-copy">
 							<small>ADDRESS</small>
@@ -263,7 +275,7 @@
 					>
 					<a
 						href="https://wa.me/966556581721"
-						class="button button-outline"
+						class="button button-blue"
 						target="_blank"
 						rel="noopener noreferrer"
 						>Talk to our team ↗</a
@@ -334,7 +346,7 @@
 				<div class="footer-column">
 					<h4>COMPANY</h4>
 					<a href="about.html">About Us</a>
-					<a href="/#newsroom">Newsroom</a>
+					<a href="newsroom.html">Newsroom</a>
 					<a href="contact.html">Contact Us</a>
 				</div>
 			</div>
@@ -345,6 +357,7 @@
 			</div>
 		</footer>
 
+		<script src="https://forminit.com/sdk/v1/forminit.js"></script>
 		<script>
 			const menuToggle = document.querySelector(".menu-toggle");
 			const navigation = document.querySelector(".nav");
@@ -362,6 +375,31 @@
 					menuToggle.setAttribute("aria-expanded", "false");
 				});
 			});
+
+			const forminit = new Forminit();
+			const FORM_ID = ""; //add form id from getforms.io
+
+			document
+				.getElementById("contact-form")
+				.addEventListener("submit", async (e) => {
+					e.preventDefault();
+
+					const formData = new FormData(e.target);
+					const { data, error } = await forminit.submit(
+						FORM_ID,
+						formData,
+					);
+
+					const status = document.getElementById("form-status");
+
+					if (error) {
+						status.textContent = error.message;
+						return;
+					}
+
+					status.textContent = "Message sent successfully!";
+					e.target.reset();
+				});
 		</script>
 	</body>
 </html>
