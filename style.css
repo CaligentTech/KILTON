@@ -256,7 +256,7 @@ button {
 }
 
 .hero-image {
-	background-image: url("./assets/hero-image.jpg");
+	background-image: url("./assets/hero-image.webp");
 	background-size: cover;
 	background-position: center 48%;
 	transform: scale(1.02);
@@ -1658,39 +1658,39 @@ button {
 }
 
 .corporate::before {
-	background-image: url("./assets/corporate.jpg");
+	background-image: url("./assets/corporate.webp");
 }
 
 .construction::before {
-	background-image: url("./assets/construction.jpg");
+	background-image: url("./assets/construction.webp");
 }
 
 .oil-gas::before {
-	background-image: url("./assets/oil-gas.jpg");
+	background-image: url("./assets/oil-gas.webp");
 }
 
 .manufacturing::before {
-	background-image: url("./assets/manufacturing.jpg");
+	background-image: url("./assets/manufacturing.webp");
 }
 
 .hospitality::before {
-	background-image: url("./assets/hospitality.jpg");
+	background-image: url("./assets/hospitality.webp");
 }
 
 .healthcare::before {
-	background-image: url("./assets/healthcare.jpg");
+	background-image: url("./assets/healthcare.webp");
 }
 
 .education::before {
-	background-image: url("./assets/education.jpg");
+	background-image: url("./assets/education.webp");
 }
 
 .retail::before {
-	background-image: url("./assets/retail.jpg");
+	background-image: url("./assets/retail.webp");
 }
 
 .warehousing::before {
-	background-image: url("./assets/warehousing.jpg");
+	background-image: url("./assets/warehousing.webp");
 }
 
 .industry-card {
@@ -2352,39 +2352,39 @@ button {
 }
 
 .cap-network::before {
-	background-image: url("./assets/networking.png");
+	background-image: url("./assets/networking.webp");
 }
 
 .cap-wireless::before {
-	background-image: url("./assets/wireless.png");
+	background-image: url("./assets/wireless.webp");
 }
 
 .cap-security::before {
-	background-image: url("./assets/security.png");
+	background-image: url("./assets/security.webp");
 }
 
 .cap-access::before {
-	background-image: url("./assets/access-control.png");
+	background-image: url("./assets/access-control.webp");
 }
 
 .cap-av-unified::before {
-	background-image: url("./assets/av-unified.png");
+	background-image: url("./assets/av-unified.webp");
 }
 
 .cap-infrastructure::before {
-	background-image: url("./assets/infrastructure.png");
+	background-image: url("./assets/infrastructure.webp");
 }
 
 .cap-fire::before {
-	background-image: url("./assets/fire-systems.png");
+	background-image: url("./assets/fire-systems.webp");
 }
 
 .cap-products::before {
-	background-image: url("./assets/products.png");
+	background-image: url("./assets/products.webp");
 }
 
 .cap-software::before {
-	background-image: url("./assets/software.png");
+	background-image: url("./assets/software.webp");
 }
 
 .cap-card-top {
