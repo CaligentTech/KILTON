@@ -824,6 +824,56 @@ button {
 	color: white;
 }
 
+.brands.brands-light,
+.brands-light {
+	background: #edf4fd;
+	color: #07172d;
+}
+
+.brands-light .brands-heading h2 {
+	color: #07172d;
+}
+
+.brands-light .brands-heading h2 span {
+	color: var(--blue);
+}
+
+.brands-light .brands-heading > p {
+	color: #5e718d;
+}
+
+.brands-light .brand-categories {
+	border-top: 1px solid #d8e4f3;
+}
+
+.brands-light .brand-row {
+	border-bottom: 1px solid #d8e4f3;
+}
+
+.brands-light .brand-category {
+	color: var(--navy);
+}
+
+.brands-light .brand-names span,
+.brands-light .brand-item {
+	color: #0d1e38;
+	background: #ffffff;
+	border: 1px solid #d8e4f3;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.brands-light .brand-names span:hover,
+.brands-light .brand-item:hover {
+	border-color: var(--blue);
+	background: #ffffff;
+	box-shadow: 0 4px 12px rgba(27, 104, 227, 0.12);
+	transform: translateY(-2px);
+}
+
+.brands-light .brands-note {
+	color: #738198;
+}
+
 .brands-heading {
 	display: flex;
 	align-items: flex-end;
@@ -873,23 +923,43 @@ button {
 	gap: 12px;
 }
 
-.brand-names span {
-	padding: 10px 15px;
-	border: 1px solid rgba(255, 255, 255, 0.16);
-	border-radius: 4px;
+.brand-names span,
+.brand-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 9px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 6px;
 	color: #e3edfb;
-	background: rgba(255, 255, 255, 0.035);
+	background: rgba(255, 255, 255, 0.05);
 	font-family: var(--heading);
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 600;
 	transition:
 		border-color 0.2s,
-		background 0.2s;
+		background 0.2s,
+		transform 0.2s;
 }
 
-.brand-names span:hover {
+.brand-item img {
+	height: 32px;
+	width: auto;
+	max-width: 52px;
+	max-height: 32px;
+	object-fit: contain;
+	transition: transform 0.2s ease;
+}
+
+.brand-names span:hover,
+.brand-item:hover {
 	border-color: #75b1ff;
-	background: rgba(76, 144, 230, 0.14);
+	background: rgba(76, 144, 230, 0.16);
+	transform: translateY(-2px);
+}
+
+.brand-item:hover img {
+	transform: scale(1.06);
 }
 
 .brands-note {
