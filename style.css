@@ -945,7 +945,7 @@ button {
 .brand-item img {
 	height: 32px;
 	width: auto;
-	max-width: 52px;
+	max-width: 68px;
 	max-height: 32px;
 	object-fit: contain;
 	transition: transform 0.2s ease;
