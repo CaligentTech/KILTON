@@ -35,7 +35,30 @@
 			<nav class="nav" id="navigation">
 				<a href="/">Home</a>
 				<a href="about.html">About Us</a>
-				<a href="services.html">Services</a>
+				<div class="nav-item has-dropdown">
+					<a href="services.html" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+						Services
+						<svg class="dropdown-icon" width="9" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<div class="nav-dropdown">
+						<a href="services.html" class="dropdown-item dropdown-overview">
+							<span>All Services Overview</span>
+							<span class="dropdown-arrow">↗</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="services.html#networking" class="dropdown-item">Networking Solutions</a>
+						<a href="services.html#wireless" class="dropdown-item">Wireless Solutions</a>
+						<a href="services.html#security" class="dropdown-item">Security & Surveillance</a>
+						<a href="services.html#access-control" class="dropdown-item">Access Control</a>
+						<a href="services.html#infrastructure" class="dropdown-item">IT Infrastructure</a>
+						<a href="services.html#av-unified" class="dropdown-item">AV & Unified Communications</a>
+						<a href="services.html#fire-systems" class="dropdown-item">Fire Alarm Systems</a>
+						<a href="services.html#products" class="dropdown-item">Enterprise Products</a>
+						<a href="services.html#software" class="dropdown-item">Software Solutions</a>
+					</div>
+				</div>
 				<a href="newsroom.html">Newsroom</a>
 				<a href="contact.html">Contact</a>
 			</nav>
@@ -816,6 +839,8 @@
 		<script>
 			const menuToggle = document.querySelector(".menu-toggle");
 			const navigation = document.querySelector(".nav");
+			const dropdownTrigger = document.querySelector(".dropdown-trigger");
+			const hasDropdown = document.querySelector(".has-dropdown");
 
 			menuToggle.addEventListener("click", () => {
 				const isOpen =
@@ -824,10 +849,26 @@
 				navigation.classList.toggle("nav-open", !isOpen);
 			});
 
+			if (dropdownTrigger && hasDropdown) {
+				dropdownTrigger.addEventListener("click", (e) => {
+					if (window.innerWidth <= 700) {
+						e.preventDefault();
+						const isOpen = hasDropdown.classList.toggle("dropdown-open");
+						dropdownTrigger.setAttribute("aria-expanded", String(isOpen));
+					}
+				});
+			}
+
 			navigation.querySelectorAll("a").forEach((link) => {
 				link.addEventListener("click", () => {
+					if (link.classList.contains("dropdown-trigger") && window.innerWidth <= 700) {
+						return;
+					}
 					navigation.classList.remove("nav-open");
 					menuToggle.setAttribute("aria-expanded", "false");
+					if (hasDropdown) {
+						hasDropdown.classList.remove("dropdown-open");
+					}
 				});
 			});
 		</script>
