@@ -777,9 +777,13 @@
 				navigation.classList.toggle("nav-open", !isOpen);
 			});
 
+			const isMobile = () =>
+				window.innerWidth <= 700 ||
+				(menuToggle && window.getComputedStyle(menuToggle).display !== "none");
+
 			if (dropdownTrigger && hasDropdown) {
 				dropdownTrigger.addEventListener("click", (e) => {
-					if (window.innerWidth <= 700) {
+					if (isMobile()) {
 						e.preventDefault();
 						const isOpen = hasDropdown.classList.toggle("dropdown-open");
 						dropdownTrigger.setAttribute("aria-expanded", String(isOpen));
@@ -789,7 +793,7 @@
 
 			navigation.querySelectorAll("a").forEach((link) => {
 				link.addEventListener("click", () => {
-					if (link.classList.contains("dropdown-trigger") && window.innerWidth <= 700) {
+					if (link.classList.contains("dropdown-trigger") && isMobile()) {
 						return;
 					}
 					navigation.classList.remove("nav-open");
