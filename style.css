@@ -953,7 +953,8 @@ button {
 }
 
 .brands:not(.brands-light) .brand-item img[src*="logitech"],
-.brands:not(.brands-light) .brand-item img[src*="belden"] {
+.brands:not(.brands-light) .brand-item img[src*="belden"],
+.brands:not(.brands-light) .brand-item img[src*="commscope"] {
 	filter: brightness(0) invert(1);
 }
 
