@@ -952,6 +952,10 @@ button {
 	transition: transform 0.2s ease;
 }
 
+.brands:not(.brands-light) .brand-item img[src*="logitech"] {
+	filter: brightness(0) invert(1);
+}
+
 .brand-names span:hover,
 .brand-item:hover {
 	border-color: #75b1ff;
