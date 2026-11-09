@@ -524,17 +524,19 @@ button {
 .hero-location {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 14px;
 	margin-top: 65px;
-	font-size: 9px;
-	letter-spacing: 1.6px;
+	font-size: 13.5px;
+	font-weight: 600;
+	letter-spacing: 2px;
 	color: #d1e4ff;
 }
 
 .location-line {
-	height: 1px;
-	width: 35px;
-	background: #a6ceff;
+	height: 2px;
+	width: 36px;
+	background: #60a5fa;
+	border-radius: 1px;
 }
 
 .intro {
@@ -643,24 +645,40 @@ button {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 56px;
+	height: 64px;
 	padding: 0 7%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-top: 1px solid rgba(255, 255, 255, 0.17);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
 	color: #d7e7ff;
-	font-size: 9px;
-	letter-spacing: 1.3px;
+	font-size: 13.5px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
 }
 
 .hero-bottom a {
+	font-size: 13.5px;
 	font-weight: 700;
+	color: #ffffff;
+	letter-spacing: 1.5px;
+	display: inline-flex;
+	align-items: center;
+	transition: color 0.2s ease;
+}
+
+.hero-bottom a:hover {
+	color: #70b4ff;
 }
 
 .hero-bottom a span {
-	margin-left: 10px;
-	font-size: 15px;
+	margin-left: 8px;
+	font-size: 16px;
+	transition: transform 0.2s ease;
+}
+
+.hero-bottom a:hover span {
+	transform: translateY(2px);
 }
 
 .capabilities {
@@ -2407,10 +2425,10 @@ button {
 	gap: 20px;
 	padding-top: 19px;
 	border-top: 1px solid rgba(255, 255, 255, 0.25);
-	color: #b7c8df;
-	font-size: 10px;
+	color: #d5e2f3;
+	font-size: 13.5px;
 	font-weight: 600;
-	letter-spacing: 1.4px;
+	letter-spacing: 1.5px;
 }
 
 .hero-floating-card {
@@ -4090,7 +4108,8 @@ button {
 
 	.hero-location {
 		margin-top: 28px;
-		font-size: 8px;
+		font-size: 12px;
+		letter-spacing: 1.5px;
 	}
 
 	.intro-content {
@@ -4127,10 +4146,15 @@ button {
 	}
 
 	.hero-bottom {
-		height: 50px;
+		height: 54px;
 		padding: 0 6%;
-		font-size: 7px;
-		letter-spacing: 0.8px;
+		font-size: 11px;
+		letter-spacing: 1px;
+	}
+
+	.hero-bottom a {
+		font-size: 11px;
+		letter-spacing: 1px;
 	}
 
 	.section-pad {
@@ -4601,7 +4625,8 @@ button {
 		left: 6%;
 		right: 6%;
 		bottom: 23px;
-		font-size: 7px;
+		font-size: 11px;
+		letter-spacing: 1px;
 	}
 
 	.hero-index span:last-child {
@@ -5011,7 +5036,13 @@ button {
 	}
 
 	.hero-bottom {
-		font-size: 6px;
+		font-size: 10px;
+		letter-spacing: 0.8px;
+	}
+
+	.hero-bottom a {
+		font-size: 10px;
+		letter-spacing: 0.8px;
 	}
 }
 
