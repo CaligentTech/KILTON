@@ -1417,7 +1417,6 @@ button {
 .story-side .eyebrow {
 	align-items: flex-start;
 	line-height: 1.8;
-	color: white;
 }
 
 .story-side-bottom {
@@ -4402,17 +4401,21 @@ button {
 
 	.about-story {
 		grid-template-columns: 1fr;
-		padding: 78px 6%;
+		padding: 95px 6% 80px;
 	}
 
 	.story-side {
 		min-height: auto;
-		margin-bottom: 34px;
+		margin-bottom: 0;
 		padding: 0;
 	}
 
 	.story-side-bottom {
 		display: none;
+	}
+
+	.story-main {
+		margin-top: 27px;
 	}
 
 	.story-main h2 {
