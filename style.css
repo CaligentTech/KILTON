@@ -1926,7 +1926,7 @@ button {
 }
 
 .hospitality::before {
-	background-image: url("./assets/hospitality.webp");
+	background-image: url("./assets/hotel-lobby.webp");
 }
 
 .healthcare::before {
