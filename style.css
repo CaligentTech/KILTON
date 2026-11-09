@@ -1646,12 +1646,12 @@ button {
 }
 
 .purpose-intro > p {
-	max-width: 380px;
+	max-width: 420px;
 	justify-self: end;
 	margin: 0;
 	color: #b7c6d9;
-	font-size: 14px;
-	line-height: 2;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .purpose-grid {
@@ -1666,7 +1666,7 @@ button {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 27px 30px;
+	padding: 32px 34px;
 	overflow: hidden;
 	border: 1px solid rgba(255, 255, 255, 0.14);
 }
@@ -1686,15 +1686,15 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	color: #c3d8f2;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 700;
-	letter-spacing: 1.4px;
+	letter-spacing: 1.5px;
 }
 
 .purpose-card-content {
 	position: relative;
 	z-index: 2;
-	max-width: 430px;
+	max-width: 520px;
 }
 
 .purpose-icon {
@@ -1721,11 +1721,11 @@ button {
 }
 
 .purpose-card-content p {
-	max-width: 390px;
+	max-width: 500px;
 	margin: 0;
-	color: #c0d0e4;
-	font-size: 12px;
-	line-height: 1.95;
+	color: #d6e5f7;
+	font-size: 16px;
+	line-height: 1.8;
 }
 
 .values-section {
@@ -4440,8 +4440,8 @@ button {
 	}
 
 	.purpose-card-content p {
-		font-size: 14px;
-		line-height: 1.7;
+		font-size: 15px;
+		line-height: 1.75;
 	}
 
 	.values-heading {
