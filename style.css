@@ -454,11 +454,11 @@ button {
 }
 
 .hero-description {
-	max-width: 470px;
+	max-width: 490px;
 	margin-top: 26px;
 	color: #d1deef;
-	font-size: 15px;
-	line-height: 1.9;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .hero-actions {
@@ -745,11 +745,11 @@ button {
 }
 
 .capability-card p {
-	max-width: 320px;
+	max-width: 340px;
 	margin-bottom: 23px;
 	color: var(--muted);
-	font-size: 14px;
-	line-height: 1.9;
+	font-size: 15px;
+	line-height: 1.8;
 }
 
 .capability-featured p {
@@ -882,8 +882,8 @@ button {
 
 .industry-item p {
 	color: #91a4bd;
-	font-size: 14px;
-	line-height: 1.7;
+	font-size: 15px;
+	line-height: 1.75;
 }
 
 .industry-arrow {
@@ -934,7 +934,7 @@ button {
 
 .process-step p {
 	color: #738198;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.8;
 }
 
@@ -1012,11 +1012,11 @@ button {
 }
 
 .brands-heading > p {
-	max-width: 360px;
+	max-width: 400px;
 	padding-bottom: 7px;
 	color: #a4b7d0;
-	font-size: 14px;
-	line-height: 1.9;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .brand-categories {
@@ -1034,7 +1034,7 @@ button {
 .brand-category {
 	padding-top: 5px;
 	color: #9db7d8;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 1.6px;
 	line-height: 1.8;
@@ -1059,7 +1059,7 @@ button {
 	color: #e3edfb;
 	background: rgba(255, 255, 255, 0.05);
 	font-family: var(--heading);
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	transition:
 		border-color 0.2s,
@@ -1097,7 +1097,7 @@ button {
 .brands-note {
 	margin-top: 25px;
 	color: #92a6c0;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.8;
 }
 
@@ -1191,8 +1191,8 @@ button {
 .news-copy p {
 	margin-bottom: 24px;
 	color: var(--muted);
-	font-size: 14px;
-	line-height: 1.9;
+	font-size: 15px;
+	line-height: 1.8;
 }
 
 .news-copy a {
@@ -1248,11 +1248,11 @@ button {
 }
 
 .contact-cta > p {
-	max-width: 540px;
+	max-width: 580px;
 	margin: 22px auto 0;
 	color: #b8cbe3;
-	font-size: 14px;
-	line-height: 1.9;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .contact-cta .hero-actions {
@@ -1285,11 +1285,11 @@ button {
 }
 
 .footer-description {
-	max-width: 285px;
+	max-width: 320px;
 	margin-top: 13px;
 	color: #92a4bc;
-	font-size: 12px;
-	line-height: 1.9;
+	font-size: 13.5px;
+	line-height: 1.85;
 }
 
 .footer-column {
@@ -1310,7 +1310,7 @@ button {
 .footer-column a,
 .footer-column > span {
 	color: #a6b5ca;
-	font-size: 12px;
+	font-size: 13.5px;
 	line-height: 1.8;
 	transition: color 0.2s;
 }
@@ -1331,13 +1331,13 @@ button {
 	gap: 20px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	color: #75869e;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.8;
 }
 
 .footer-bottom a {
 	color: #b7cce9;
-	font-size: 9px;
+	font-size: 11.5px;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -1956,17 +1956,17 @@ button {
 }
 
 .industry-content p {
-	max-width: 270px;
+	max-width: 290px;
 	margin: 0;
 	color: #d0dceb;
-	font-size: 12px;
-	line-height: 1.8;
+	font-size: 14.5px;
+	line-height: 1.75;
 }
 
 .industry-note {
 	margin: 23px 0 0;
 	color: #7d8da2;
-	font-size: 12px;
+	font-size: 13.5px;
 	line-height: 1.8;
 }
 
@@ -2126,7 +2126,7 @@ button {
 }
 
 .form-heading > p {
-	font-size: 14px;
+	font-size: 15.5px;
 	line-height: 1.8;
 	margin-bottom: 34px;
 }
@@ -2201,7 +2201,7 @@ button {
 
 .form-footnote {
 	color: #9aa4b6;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 1.7;
 	margin-top: 15px;
 }
@@ -2232,8 +2232,8 @@ button {
 }
 
 .sidebar-top > p {
-	font-size: 14px;
-	line-height: 1.9;
+	font-size: 15.5px;
+	line-height: 1.85;
 	color: var(--muted);
 }
 
@@ -2383,8 +2383,8 @@ button {
 	max-width: 440px;
 	margin: 0;
 	color: #c1cee0;
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .sv-hero-actions {
@@ -2499,8 +2499,8 @@ button {
 .infra-heading-copy p {
 	margin: 0 0 17px;
 	color: var(--muted);
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 15.5px;
+	line-height: 1.85;
 }
 
 .sv-intro-copy .text-link {
@@ -2627,8 +2627,8 @@ button {
 	margin: 0;
 	margin-right: 50px;
 	color: #c3d0e0;
-	font-size: 14px;
-	line-height: 1.8;
+	font-size: 15px;
+	line-height: 1.75;
 }
 
 .cap-card-bottom {
@@ -2773,8 +2773,8 @@ button {
 .feature-copy > p {
 	margin: 0 0 15px;
 	color: var(--muted);
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 15.5px;
+	line-height: 1.85;
 }
 
 .sv-feature-dark .feature-copy > p {
@@ -2987,7 +2987,7 @@ button {
 	padding: 21px 26px;
 	border-bottom: 1px solid #edf1f6;
 	color: #526176;
-	font-size: 13px;
+	font-size: 14.5px;
 	font-weight: 500;
 	line-height: 1.75;
 	vertical-align: middle;
@@ -3009,7 +3009,7 @@ button {
 	display: inline-block;
 	color: var(--sv-navy, #07172d);
 	font-family: "Manrope", sans-serif;
-	font-size: 13px;
+	font-size: 14.5px;
 	font-weight: 800;
 	line-height: 1.5;
 }
@@ -3035,8 +3035,8 @@ button {
 
 .software-heading-copy p {
 	margin: 0 0 17px;
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 15.5px;
+	line-height: 1.85;
 	color: #b1bfd2;
 }
 
@@ -3225,7 +3225,7 @@ button {
 	grid-column: 2;
 	margin: 0;
 	color: var(--muted);
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.8;
 }
 
@@ -3325,8 +3325,8 @@ button {
 .digital-heading > p {
 	max-width: 520px;
 	color: #b2c2d7;
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .digital-grid {
@@ -3387,8 +3387,8 @@ button {
 
 .digital-card-copy p {
 	color: var(--muted);
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 15px;
+	line-height: 1.8;
 }
 
 .digital-link {
@@ -3506,8 +3506,8 @@ button {
 	max-width: 440px;
 	margin: 0;
 	color: #c1cee0;
-	font-size: 14px;
-	line-height: 1.95;
+	font-size: 16px;
+	line-height: 1.85;
 }
 
 .kt-news-article {
@@ -4149,7 +4149,8 @@ button {
 	.section-intro,
 	.brands-heading > p {
 		max-width: 100%;
-		font-size: 13px;
+		font-size: 15px;
+		line-height: 1.8;
 	}
 
 	.capability-grid {
@@ -4175,7 +4176,7 @@ button {
 
 	.capability-footer > span,
 	.news-bottom > span {
-		font-size: 8px;
+		font-size: 11px;
 		line-height: 1.8;
 	}
 
@@ -4191,11 +4192,12 @@ button {
 	}
 
 	.industry-item h3 {
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	.industry-item p {
-		font-size: 10px;
+		font-size: 13.5px;
+		line-height: 1.6;
 	}
 
 	.process-step {
@@ -4209,7 +4211,8 @@ button {
 	}
 
 	.process-step p {
-		font-size: 11px;
+		font-size: 14px;
+		line-height: 1.7;
 	}
 
 	.brands-heading {
@@ -4222,7 +4225,7 @@ button {
 	}
 
 	.brand-category {
-		font-size: 8px;
+		font-size: 12px;
 	}
 
 	.brand-names {
@@ -4231,7 +4234,7 @@ button {
 
 	.brand-names span {
 		padding: 9px 11px;
-		font-size: 10px;
+		font-size: 13px;
 	}
 
 	.news-grid {
@@ -4261,7 +4264,8 @@ button {
 	}
 
 	.contact-cta > p {
-		font-size: 12px;
+		font-size: 15px;
+		line-height: 1.8;
 	}
 
 	.contact-cta .hero-actions {
@@ -4293,13 +4297,13 @@ button {
 	}
 
 	.footer-column h4 {
-		font-size: 8px;
+		font-size: 12px;
 		line-height: 1.7;
 	}
 
 	.footer-column a,
 	.footer-column > span {
-		font-size: 10px;
+		font-size: 13px;
 		overflow-wrap: anywhere;
 	}
 
@@ -4342,7 +4346,8 @@ button {
 	}
 
 	.story-description p {
-		font-size: 11px;
+		font-size: 14.5px;
+		line-height: 1.8;
 	}
 
 	.story-statement {
@@ -4391,7 +4396,8 @@ button {
 	.values-heading > p,
 	.industries-heading > p {
 		justify-self: start;
-		font-size: 11px;
+		font-size: 14.5px;
+		line-height: 1.8;
 	}
 
 	.thinking-cases {
@@ -4434,7 +4440,8 @@ button {
 	}
 
 	.purpose-card-content p {
-		font-size: 11px;
+		font-size: 14px;
+		line-height: 1.7;
 	}
 
 	.values-heading {
@@ -4461,7 +4468,8 @@ button {
 	}
 
 	.value-item p {
-		font-size: 10px;
+		font-size: 13.5px;
+		line-height: 1.7;
 	}
 
 	.industries-heading {
@@ -4488,7 +4496,8 @@ button {
 	}
 
 	.industry-content p {
-		font-size: 9px;
+		font-size: 13px;
+		line-height: 1.6;
 	}
 
 	.process-grid {
@@ -4506,7 +4515,8 @@ button {
 	}
 
 	.work-step p {
-		font-size: 10px;
+		font-size: 13.5px;
+		line-height: 1.7;
 	}
 
 	.sv-hero {
@@ -4533,7 +4543,8 @@ button {
 
 	.sv-hero-content > p {
 		max-width: 400px;
-		font-size: 12px;
+		font-size: 14.5px;
+		line-height: 1.8;
 	}
 
 	.sv-hero-actions {
@@ -4565,7 +4576,8 @@ button {
 
 	.nw-hero-content > p {
 		max-width: 400px;
-		font-size: 12px;
+		font-size: 14.5px;
+		line-height: 1.8;
 	}
 
 	.hero-floating-card {
@@ -4629,11 +4641,12 @@ button {
 	}
 
 	.cap-card-content p {
-		font-size: 9px;
+		font-size: 13.5px;
+		line-height: 1.6;
 	}
 
 	.cap-card-bottom {
-		font-size: 7px;
+		font-size: 11px;
 		letter-spacing: 0.6px;
 	}
 
@@ -4652,13 +4665,14 @@ button {
 	}
 
 	.feature-copy > p {
-		font-size: 12px;
+		font-size: 14.5px;
+		line-height: 1.8;
 	}
 
 	.photo-caption {
 		left: 18px;
 		right: 18px;
-		font-size: 7px;
+		font-size: 11px;
 		letter-spacing: 0.8px;
 	}
 
@@ -4763,8 +4777,8 @@ button {
 	}
 	.kt-news-body > p,
 	.kt-news-copy-section p {
-		font-size: 13px;
-		line-height: 1.9;
+		font-size: 15px;
+		line-height: 1.8;
 	}
 }
 
@@ -4891,7 +4905,8 @@ button {
 	}
 
 	.work-step p {
-		font-size: 9px;
+		font-size: 13px;
+		line-height: 1.6;
 	}
 	.story-main {
 		margin-top: 20px;
@@ -4919,11 +4934,12 @@ button {
 	}
 
 	.cap-card-content p {
-		font-size: 8px;
+		font-size: 12.5px;
+		line-height: 1.6;
 	}
 
 	.cap-card-bottom {
-		font-size: 6px;
+		font-size: 10.5px;
 	}
 
 	.photo-caption span:last-child {
