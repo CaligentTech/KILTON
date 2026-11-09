@@ -2809,17 +2809,18 @@ button {
 
 .points > div {
 	display: grid;
-	grid-template-columns: 35px 1fr;
-	gap: 12px;
-	padding: 16px 0;
+	grid-template-columns: 36px 1fr;
+	gap: 14px;
+	padding: 18px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .points > div > span {
 	padding-top: 2px;
 	color: #80b9ff;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
+	letter-spacing: 0.5px;
 }
 
 .points strong,
@@ -2828,14 +2829,17 @@ button {
 }
 
 .points strong {
-	font-size: 14px;
+	font-size: 16.5px;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #ffffff;
 }
 
 .points small {
 	margin-top: 6px;
-	color: #a9bad0;
-	font-size: 12px;
-	line-height: 1.7;
+	color: #c7d8ed;
+	font-size: 14.5px;
+	line-height: 1.75;
 }
 
 .points-dark {
@@ -2845,16 +2849,18 @@ button {
 
 .points-dark > div {
 	display: grid;
-	grid-template-columns: 35px 1fr;
-	gap: 12px;
-	padding: 16px 0;
+	grid-template-columns: 36px 1fr;
+	gap: 14px;
+	padding: 18px 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .points-dark > div > span {
 	padding-top: 2px;
-	font-size: 10px;
+	color: var(--navy);
+	font-size: 12px;
 	font-weight: 700;
+	letter-spacing: 0.5px;
 }
 
 .points-dark strong,
@@ -2863,15 +2869,17 @@ button {
 }
 
 .points-dark strong {
-	font-size: 14px;
+	font-size: 16.5px;
+	font-weight: 700;
+	line-height: 1.35;
 	color: var(--blue);
 }
 
 .points-dark small {
 	margin-top: 6px;
-	color: var(--muted);
-	font-size: 12px;
-	line-height: 1.7;
+	color: #4b5d75;
+	font-size: 14.5px;
+	line-height: 1.75;
 }
 
 .security-overlay-card {
