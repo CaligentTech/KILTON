@@ -1298,6 +1298,10 @@ button {
 	justify-content: center;
 }
 
+.contact-cta .hero-actions .button {
+	min-width: 250px;
+}
+
 .footer {
 	padding: 65px 6% 0;
 	background: #040d1b;
