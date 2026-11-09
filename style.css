@@ -918,6 +918,10 @@ button {
 	background: #edf4fd;
 }
 
+.process.section-pad {
+	padding-bottom: 40px;
+}
+
 .process-layout {
 	display: grid;
 	gap: 80px;
@@ -971,6 +975,11 @@ button {
 .brands-light {
 	background: #edf4fd;
 	color: #07172d;
+}
+
+.brands.brands-light.section-pad,
+.brands-light.section-pad {
+	padding-top: 50px;
 }
 
 .brands-light .brands-heading h2 {
@@ -4159,6 +4168,15 @@ button {
 
 	.section-pad {
 		padding: 75px 6%;
+	}
+
+	.process.section-pad {
+		padding-bottom: 15px;
+	}
+
+	.brands.brands-light.section-pad,
+	.brands-light.section-pad {
+		padding-top: 25px;
 	}
 
 	.section-heading,
