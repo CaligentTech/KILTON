@@ -2958,7 +2958,7 @@ button {
 }
 
 .sv-product {
-	padding: 115px 8% 125px;
+	padding: 65px 8% 115px;
 	background: #f4f7fb;
 }
 
@@ -4652,19 +4652,31 @@ button {
 	}
 
 	.sv-intro,
-	.sv-product,
 	.sv-software,
 	.sv-digital,
 	.sv-approach {
-		padding: 80px 6%;
+		padding: 60px 6% 70px;
 	}
 
-	.sv-intro-grid,
+	.sv-product {
+		padding: 30px 6% 65px;
+	}
+
+	.sv-intro-grid {
+		grid-template-columns: 1fr;
+		gap: 25px;
+		margin-top: 30px;
+	}
+
 	.infra-heading,
 	.software-heading {
 		grid-template-columns: 1fr;
 		gap: 25px;
-		margin-top: 30px;
+		margin-top: 0;
+	}
+
+	#fire-systems .feature-copy {
+		padding-bottom: 25px;
 	}
 
 	.sv-intro h2,
