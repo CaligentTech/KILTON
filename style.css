@@ -592,7 +592,8 @@ button {
 }
 
 .intro-text > p {
-	font-size: 20px;
+	font-size: 16px;
+	line-height: 1.85;
 	color: #9eafc5;
 }
 
@@ -1479,12 +1480,17 @@ button {
 }
 
 .story-lead p {
-	margin: 0;
-	font-family: "Manrope", sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 1.65;
-	letter-spacing: -0.5px;
+	margin: 0 0 16px;
+	font-family: var(--font);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.85;
+	letter-spacing: normal;
+	color: #d1deef;
+}
+
+.story-lead p:last-child {
+	margin-bottom: 0;
 }
 
 .story-description p {
@@ -4162,6 +4168,15 @@ button {
 		width: auto;
 		height: 300px;
 	}
+
+	.intro-text {
+		gap: 20px;
+	}
+
+	.intro-text > p {
+		font-size: 13px;
+		line-height: 1.8;
+	}
 	.floating-card {
 		padding: 10px 12px;
 	}
@@ -4430,11 +4445,12 @@ button {
 	}
 
 	.story-lead p {
-		font-size: 19px;
+		font-size: 13px;
+		line-height: 1.8;
 	}
 
 	.story-description p {
-		font-size: 14.5px;
+		font-size: 13px;
 		line-height: 1.8;
 	}
 
