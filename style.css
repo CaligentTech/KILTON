@@ -2230,6 +2230,14 @@ button {
 	flex-direction: column;
 }
 
+#form-status {
+	text-align: center;
+	font-size: 14.5px;
+	font-weight: 500;
+	margin-top: 18px;
+	min-height: 22px;
+}
+
 .form-row {
 	display: grid;
 	grid-template-columns: 1fr 1fr;

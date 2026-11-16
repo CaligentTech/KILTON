@@ -69,7 +69,7 @@
 		</header>
 
 		<main>
-			<section class="contact-main" id="contact-form">
+			<section class="contact-main">
 				<div class="form-panel">
 					<div class="form-heading">
 						<span class="eyebrow light-eyebrow">- CONTACT US</span>
@@ -459,20 +459,24 @@
 				.addEventListener("submit", async (e) => {
 					e.preventDefault();
 
+					const status = document.getElementById("form-status");
+					status.style.color = "#93c5fd";
+					status.textContent = "Sending your message...";
+
 					const formData = new FormData(e.target);
 					const { data, error } = await forminit.submit(
 						FORM_ID,
 						formData,
 					);
 
-					const status = document.getElementById("form-status");
-
 					if (error) {
-						status.textContent = error.message;
+						status.style.color = "#f87171";
+						status.textContent = error.message || "Something went wrong. Please try again.";
 						return;
 					}
 
-					status.textContent = "Message sent successfully!";
+					status.style.color = "#6ee7b7";
+					status.textContent = "Thank you! Your quotation request has been sent successfully.";
 					e.target.reset();
 				});
 		</script>
