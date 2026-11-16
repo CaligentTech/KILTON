@@ -832,11 +832,42 @@
 
 			<div class="footer-bottom">
 				<span>© 2026 Kilton Technologies. All Rights Reserved.</span>
-				<span>ENGINEERING TECHNOLOGY. ENABLING BUSINESS.</span>
+				<div class="footer-bottom-right">
+					<span>ENGINEERING TECHNOLOGY. ENABLING BUSINESS.</span>
+					<button
+						type="button"
+						class="back-to-top"
+						id="backToTop"
+						aria-label="Back to top"
+						title="Back to top"
+						onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+					>
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2.8"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<polyline points="18 15 12 9 6 15"></polyline>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</footer>
 
 		<script>
+			const backToTopBtn = document.getElementById("backToTop");
+			if (backToTopBtn) {
+				backToTopBtn.addEventListener("click", () => {
+					window.scrollTo({ top: 0, behavior: "smooth" });
+				});
+			}
+
 			const menuToggle = document.querySelector(".menu-toggle");
 			const navigation = document.querySelector(".nav");
 			const dropdownTrigger = document.querySelector(".dropdown-trigger");
