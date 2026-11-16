@@ -1320,7 +1320,7 @@ button {
 	display: flex;
 	justify-content: space-between;
 	gap: 60px;
-	padding-bottom: 55px;
+	padding-bottom: 35px;
 }
 
 .footer-logo .brand-name {
@@ -1374,22 +1374,10 @@ button {
 	word-wrap: break-word;
 }
 
-.footer-bottom {
-	min-height: 75px;
+.footer-action {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	color: #75869e;
-	font-size: 12px;
-	line-height: 1.8;
-}
-
-.footer-bottom-right {
-	display: flex;
-	align-items: center;
-	gap: 24px;
+	justify-content: flex-end;
+	padding-bottom: 22px;
 }
 
 .back-to-top {
@@ -1423,6 +1411,18 @@ button {
 	width: 20px;
 	height: 20px;
 	display: block;
+}
+
+.footer-bottom {
+	min-height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	color: #75869e;
+	font-size: 12px;
+	line-height: 1.8;
 }
 
 .footer-bottom a {
@@ -4419,7 +4419,7 @@ button {
 	}
 
 	.footer-main {
-		padding-bottom: 40px;
+		padding-bottom: 25px;
 	}
 
 	.footer-brand {
@@ -4445,35 +4445,26 @@ button {
 		overflow-wrap: anywhere;
 	}
 
-	.footer-bottom {
-		position: relative;
-		align-items: flex-start;
-		flex-direction: column;
-		justify-content: center;
-		gap: 8px;
-		padding: 20px 58px 20px 0;
-	}
-
-	.footer-bottom-right {
-		display: contents;
+	.footer-action {
+		padding-bottom: 18px;
 	}
 
 	.back-to-top {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
 		width: 42px;
 		height: 42px;
-	}
-
-	.back-to-top:hover {
-		transform: translateY(-50%);
 	}
 
 	.back-to-top svg {
 		width: 18px;
 		height: 18px;
+	}
+
+	.footer-bottom {
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+		padding: 20px 0;
 	}
 
 	.about-story {
